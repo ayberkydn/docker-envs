@@ -11,7 +11,6 @@ RUN pip install pandas
 RUN pip install sympy 
 RUN pip install nose
 RUN pip install einops
-RUN pip install jedi-language-server
 
 CMD jupyter-lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 #CMD sh
