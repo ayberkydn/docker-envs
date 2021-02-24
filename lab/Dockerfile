@@ -18,6 +18,8 @@ RUN pip install nose
 RUN pip install einops
 RUN pip install opencv-python  
 
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 
 CMD jupyter-lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 #CMD sh
