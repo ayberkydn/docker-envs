@@ -17,6 +17,7 @@ RUN pip install sympy
 RUN pip install nose
 RUN pip install einops
 RUN pip install opencv-python  
+RUN pip install wandb  
 
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
